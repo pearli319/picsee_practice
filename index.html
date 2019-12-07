@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>會員方案|PicSee 皮克看見</title>
+
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav>
+            <img src="./img/picsee_light_web.png">
+            <ul id="left-nav">
+                <li>
+                    <a href="https://picsee.co/about.php" target="_blank">知名用戶</a>
+                </li>
+                <li>
+                    <a href="#">會員方案</a>
+                </li>
+                <li>
+                    <a href="https://picsee.io/boosts" target="_blank">精準廣告</a>
+                </li>
+                <li>
+                    <a href="https://picsee.co/tools.php" target="_blank">強者工具</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/picsee.co" target="_blank">粉絲專頁</a>
+                </li>
+            </ul>
+            <ul id="right-nav">
+                <li>
+                    <a>會員登入</a>
+                </li>
+                <li>
+                    <a>中文(正體)</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <article>
+        <h1>請選擇會員方案</h1>
+        <section id="list">
+            <div id="level">
+                <button type="button" id="pro">
+                    專業版<br><span>頁面內購</span>
+                </button>
+                <button type="button" id="free">
+                    個人版<br><span>免費</span>
+                </button>
+            </div>
+            <ul>
+                <li v-for="(item, key) in cando" class="items">{{key}}
+                    <span class="check" id="checkpro" >✓</span>
+                    <span v-if="item" class="check" id="checkfree" >✓</span>
+                    <hr>
+                </li>
+            </ul>
+        </section>
+        <form>
+            <input type="checkbox" value="rule" name="rule-check">除非我許可，皮克看見才能透露我的個資給指定單位，我同意使用條款及隱私權宣告。
+        </form>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

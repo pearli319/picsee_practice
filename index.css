@@ -1,0 +1,114 @@
+html,
+body,
+ul,
+li,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    background-color: rgb(19, 78, 126);
+    height: 55px;
+    padding: 5px 40px;
+    overflow: hidden;
+}
+
+img {
+    float: left;
+    padding: 12px 10px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#left-nav {
+    float: left;
+    padding: 10px;
+}
+
+#right-nav {
+    float: right;
+    padding: 10px;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 10px 12px;
+    float: left;
+}
+
+nav li:hover {
+    background-color: rgb(238, 187, 18);
+    opacity: 0.5;
+}
+
+nav a {
+    font-size: 14px;
+    color: inherit;
+    /* 移除超連結顏色 */
+    text-decoration: none;
+    /* 移除超連結底線 */
+}
+
+article {
+    width: 700px;
+    margin: 50px auto;
+}
+
+.items{
+    padding: 6px;
+}
+
+#level{
+    margin:10px;
+    padding-bottom:60px;
+}
+
+button{
+    outline: none;
+}
+
+#free{
+    height: 70px;
+    background-color: rgb(255, 187, 0);
+    float:right;
+    padding: 16px;
+    margin-right: 25px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#pro{
+    height: 70px;
+    background-color: rgb(255, 187, 0);
+    float:right;
+    padding: 15px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#level span{
+    font-size: 12px;
+}
+
+form {
+    margin-top: 17px;
+}
+
+.check{
+    float: right;
+    margin-right: 35px;
+    color: grey;
+}
+
+#checkfree {
+    margin-right: 90px;
+}
+
